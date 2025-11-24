@@ -1,115 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Amos Gitau - Mobile Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="profile">
-                <img src="assets/hero.png" alt="Profile Picture" class="profile-img">
-                <h1>Alex Johnson</h1>
-                <p>Web Developer & Designer</p>
+                <img src="assets/hero.png" alt="Amos Gitau" class="profile-img">
+                <h1>Amos Gitau</h1>
+                <p>Mobile Developer</p>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Cups of Coffee</span>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
             </div>
-            
+
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about" class="active">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            
+
             <div class="contact-info">
-                <p><i>📧</i> alex@example.com</p>
-                <p><i>📱</i> +1 (123) 456-7890</p>
-                <p><i>📍</i> New York, USA</p>
+                <p><i class="fas fa-envelope"></i> mosigitau@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 0115088899</p>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, 00100, Kenya</p>
             </div>
         </aside>
-        
+
         <!-- Main Content -->
         <main class="main-content">
             <!-- About Section -->
             <section id="about">
                 <h2>About Me</h2>
-                <p>Hello! I'm Alex Johnson, a passionate web developer with over 5 years of experience creating beautiful and functional websites. I specialize in front-end development with a focus on user experience and clean code.</p>
-                <p>My approach combines technical expertise with creative design thinking to deliver solutions that not only look great but also perform exceptionally well across all devices.</p>
+                <p>I'm Amos, a passionate Mobile Developer with 5+ years of experience crafting high-performance
+                    applications. My expertise spans native Android development and cross-platform solutions, with a
+                    focus on creating intuitive user experiences and scalable architectures. I thrive in remote
+                    environments and have successfully delivered projects for clients worldwide.</p>
+
+                <h3>My Technical Toolkit</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Kotlin</div>
+                    <div class="skill-tag">Compose</div>
+                    <div class="skill-tag">Dart</div>
+                    <div class="skill-tag">Flutter</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Vue.js</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">Firebase</div>
+                    <div class="skill-tag">REST APIs</div>
+                    <div class="skill-tag">UI/UX Design</div>
+                    <div class="skill-tag">CI/CD</div>
+                </div>
             </section>
-            
+
             <!-- Services Section -->
             <section id="services">
-                <h2>Services</h2>
+                <h2>What I Do</h2>
+                <p class="section-subtitle">Quality services tailored to your needs</p>
+
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3><i>💻</i> Web Development</h3>
-                        <p>Custom website development using modern technologies like HTML5, CSS3, JavaScript, and responsive frameworks.</p>
+                        <h3><i class="fas fa-palette"></i> UI Design</h3>
+                        <p>Passionate UI designer with a knack for creating visually appealing and user-friendly
+                            interfaces. I combine aesthetics with functionality to deliver engaging experiences that
+                            meet user needs. Skilled in tools like Figma and Adobe XD, I thrive on collaboration and
+                            feedback to refine designs.</p>
                     </div>
                     <div class="service-card">
-                        <h3><i>🎨</i> UI/UX Design</h3>
-                        <p>User-centered design approach creating intuitive interfaces that enhance user experience and engagement.</p>
+                        <h3><i class="fas fa-code"></i> Web Development</h3>
+                        <p>Detail-oriented web developer with a passion for building responsive and dynamic websites. I
+                            specialize in modern frameworks, ensuring seamless user experiences across all devices.
+                            Committed to clean code and best practices, I enjoy collaborating to bring ideas to life.
+                        </p>
                     </div>
                     <div class="service-card">
-                        <h3><i>📱</i> Responsive Design</h3>
-                        <p>Creating websites that work perfectly on all devices, from desktop computers to mobile phones.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3><i>⚡</i> Performance Optimization</h3>
-                        <p>Improving website speed and performance to ensure fast loading times and better user retention.</p>
+                        <h3><i class="fas fa-mobile-alt"></i> App Development</h3>
+                        <p>Innovative app developer focused on creating user-friendly mobile applications for iOS and
+                            Android. Proficient in modern technologies, I design and build seamless experiences that
+                            prioritize functionality and aesthetics. Let's turn your app ideas into reality!</p>
                     </div>
                 </div>
             </section>
-            
-            <!-- Projects Section -->
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/400x200" alt="Project 1" class="project-img">
-                        <div class="project-info">
-                            <h3>E-commerce Platform</h3>
-                            <p>A fully responsive e-commerce website with product filtering, cart functionality, and secure checkout.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Dart/Flutter</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Kotlin</span>
+                                <span>86%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Jet Compose (Native/KMP)</span>
+                                <span>86%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Node.js/JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Java</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/400x200" alt="Project 2" class="project-img">
-                        <div class="project-info">
-                            <h3>Portfolio Website</h3>
-                            <p>A clean and modern portfolio website for a freelance photographer with image galleries and contact forms.</p>
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">Firebase</span>
+
+                    <div class="skill-category">
+                        <h3>Professional Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Communication</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/400x200" alt="Project 3" class="project-img">
-                        <div class="project-info">
-                            <h3>Task Management App</h3>
-                            <p>A productivity application for managing tasks with drag-and-drop functionality and team collaboration features.</p>
-                            <div class="project-tags">
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Team Work</span>
+                                <span>66%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 66%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Project Management</span>
+                                <span>86%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Creativity</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
+            <!-- Education & Experience Section -->
+            <section id="experience">
+                <h2>Education & Experience</h2>
+
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2021-2023</div>
+                                <div class="timeline-content">
+                                    <h3>Computer Science From College</h3>
+                                    <p>At College, I honed my skills in Computer Science, engaged in hands-on projects,
+                                        and collaborated with peers to foster a dynamic learning environment.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023-Present</div>
+                                <div class="timeline-content">
+                                    <h3>Web Design From Udemy</h3>
+                                    <p>Through Udemy, I expanded my knowledge in Web Designing, completing courses on
+                                        web development, including Node.js backend.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024-</div>
+                                <div class="timeline-content">
+                                    <h3>Flutter Mobile Development From Coursera</h3>
+                                    <p>In Coursera, I expanded my knowledge in Flutter App Development, completing
+                                        courses on Android & iOS development.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Current</div>
+                                <div class="timeline-content">
+                                    <h3>Mobile Developer From Google Developers</h3>
+                                    <p>Currently studying Mobile Development, I am deepening my understanding of
+                                        Software Engineering. Engaging in hands-on projects and collaborative learning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Work Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Remote</div>
+                                <div class="timeline-content">
+                                    <h3>UI/UX Designer Freelancing</h3>
+                                    <p><strong>Responsibilities:</strong></p>
+                                    <p>Figma Design, Adobe XD Design</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Remote</div>
+                                <div class="timeline-content">
+                                    <h3>Web Design Contract</h3>
+                                    <p><strong>Responsibilities:</strong></p>
+                                    <p>Web Design, Node.js Backend Development</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Upwork</div>
+                                <div class="timeline-content">
+                                    <h3>Android App Development Freelancing</h3>
+                                    <p><strong>Responsibilities:</strong></p>
+                                    <p>Android, Android App Development (Native)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">NaviSoftware Ltd</div>
+                                <div class="timeline-content">
+                                    <h3>Mobile App Development On work</h3>
+                                    <p><strong>Responsibilities:</strong></p>
+                                    <p>Flutter App Development, Social App Integration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <h2>Recent Portfolio</h2>
+
+                <div class="portfolio-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Apps</button>
+                    <button class="filter-btn">Mockups</button>
+                    <button class="filter-btn">Photos</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/1.png" alt="Flutter Dermatology App" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>Mobile App</h3>
+                            <p>Flutter Dermatology App</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/2.png" alt="Maskani App" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>Maskani App</h3>
+                            <p>App for tenants and landlords to manage their properties</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/4.png" alt="E-commerce App" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>E-commerce App(Mobx)</h3>
+                            <p>Shopping app interface</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/20.png" alt="Social Media App" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>Social Media App</h3>
+                            <p>Community platform</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/5.png" alt="Eventify App" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>Eventify App</h3>
+                            <p>Real-time Event Application</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio/3.png" alt="Quoty App" class="portfolio-img">
+                        <div class="portfolio-info">
+                            <h3>Quoty App</h3>
+                            <p>Books Store app</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications">
+                <h2>Certifications & Achievements</h2>
+                <p>Professional credentials and notable accomplishments</p>
+
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <div class="certification-header">
+                            <div class="certification-badge">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h3>Mobile Skills Award</h3>
+                                <p>Demonstrated expertise in developing and maintaining Mobile applications.</p>
+                            </div>
+                        </div>
+                        <div class="certification-meta">
+                            <span>Issued: Mar 2024</span>
+                            <span>Credential ID: XYZ123456</span>
+                        </div>
+                        <a href="#">View Credential</a>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="certification-header">
+                            <div class="certification-badge">
+                                <i class="fab fa-google-play"></i>
+                            </div>
+                            <div>
+                                <h3>Google Play Store Certificate</h3>
+                                <p>Validated skills in digital mobile marketing best practices for those building store
+                                    listings in Google Play Console.</p>
+                            </div>
+                        </div>
+                        <div class="certification-meta">
+                            <span>Issued: Nov 2022</span>
+                            <span>Status: In Progress</span>
+                        </div>
+                        <a href="#">View Credential</a>
+                    </div>
+
+                    <div class="certification-card">
+                        <div class="certification-header">
+                            <div class="certification-badge">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h3>Co-Founded NeuroRhym ltd</h3>
+                                <p>First Tech solution ltd for innovative AI solution in healthcare sector.</p>
+                            </div>
+                        </div>
+                        <div class="certification-meta">
+                            <span>Date: 2025</span>
+                        </div>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </section>
+
             <!-- Contact Section -->
             <section id="contact">
-                <h2>Contact Me</h2>
+                <h2>Let's Connect</h2>
                 <form class="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -131,50 +443,56 @@
                         <button type="submit" class="btn">Send Message</button>
                     </div>
                 </form>
+
+                <div class="contact-info" style="margin-top: 2rem; border-top: 1px solid #e2e8f0; padding-top: 1.5rem;">
+                    <p><i class="fas fa-envelope"></i> mosigitau@mosigitau.com</p>
+                    <p><i class="fas fa-phone"></i> +254115088899</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                </div>
             </section>
         </main>
     </div>
 
     <script>
         // Simple JavaScript for navigation and responsive behavior
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Smooth scrolling for navigation links
             const navLinks = document.querySelectorAll('.nav-links a');
-            
+
             navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
-                    
+
                     const targetId = this.getAttribute('href');
                     const targetSection = document.querySelector(targetId);
-                    
+
                     window.scrollTo({
                         top: targetSection.offsetTop - 20,
                         behavior: 'smooth'
                     });
-                    
+
                     // Update active link
                     navLinks.forEach(l => l.classList.remove('active'));
                     this.classList.add('active');
                 });
             });
-            
+
             // Update active link on scroll
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 const sections = document.querySelectorAll('section');
                 const navLinks = document.querySelectorAll('.nav-links a');
-                
+
                 let current = '';
-                
+
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                    
+
                     if (pageYOffset >= sectionTop - 60) {
                         current = section.getAttribute('id');
                     }
                 });
-                
+
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === `#${current}`) {
@@ -182,7 +500,25 @@
                     }
                 });
             });
+
+            // Portfolio filtering
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // In a real implementation, you would filter the portfolio items here
+                    // For this example, we'll just log the filter
+                    console.log(`Filtering by: ${this.textContent}`);
+                });
+            });
         });
     </script>
 </body>
+
 </html>
