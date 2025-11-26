@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Profile Tooltip</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 4px solid #ddd;
+    transition: 0.2s ease;
+  }
+
+  .profile-image:hover {
+    border-color: #7c3aed;
+  }
+
+  /* Tooltip */
+  .tooltip-box {
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1f2937;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .tooltip-box::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #1f2937 transparent transparent transparent;
+  }
+
+  .tooltip-box.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="profile-wrapper">
+  <img src="https://i.pravatar.cc/200" alt="Profile" class="profile-image" id="profilePic" />
+  <div class="tooltip-box" id="tooltip">Frontend Developer • UI/UX Designer</div>
+</div>
+
+<script>
+  const profilePic = document.getElementById("profilePic");
+  const tooltip = document.getElementById("tooltip");
+
+  profilePic.addEventListener("click", () => {
+    tooltip.classList.toggle("active");
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!profilePic.contains(e.target)) {
+      tooltip.classList.remove("active");
+    }
+  });
+</script>
+
+</body>
+</html>
