@@ -1,6 +1,6 @@
         /* iOS Cupertino Design System */
         :root {
-            --ios-primary: #007AFF;
+            --ios-primary: #003049;
             --ios-secondary: #5856D6;
             --ios-red: #FF3B30;
             --ios-orange: #FF9500;
@@ -160,6 +160,39 @@
             color: var(--ios-text-tertiary);
             margin-bottom: 1.5rem;
             font-size: 1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--ios-gray-6);
+            color: var(--ios-text-secondary);
+            font-size: 1.2rem;
+            transition: var(--transition);
+            border: 1px solid var(--ios-gray-5);
+        }
+
+        .social-icon:hover {
+            background-color: var(--ios-primary);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 122, 255, 0.3);
+            border-color: var(--ios-primary);
+        }
+
+        .social-icon i {
+            transition: var(--transition);
         }
 
         .stats {
@@ -897,7 +930,7 @@
         }
 
         .btn-view-live:hover {
-            background-color: #2ca44d;
+            background-color: #2c8a44;
         }
 
         .btn-github {
